@@ -19,10 +19,16 @@ import {
   starbucks,
   tesla,
   shopify,
+  tbc,
   carrent,
   jobit,
   tripguide,
   threejs,
+  tcsIcon,
+  mysql,
+  sequelize,
+  ecom,
+  warehouseImg,
 } from "../assets";
 
 export const navLinks = [
@@ -42,20 +48,17 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Software Developer",
     icon: web,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "React Developer",
+    icon: mobile,
   },
 ];
 
@@ -77,6 +80,30 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Sequelize",
+    icon: sequelize,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "docker",
+    icon: docker,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
@@ -88,83 +115,33 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Programmer",
+    company_name: "Tata Consultancy Services",
+    icon: tcsIcon,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "October 2020 - June 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to various projects involving computer networking, systems management, and server administration.",
+      "Worked with Node.js to develop and optimize backend solutions, ensuring high performance and scalability for enterprise-level applications.",
+      "Collaborated with teams to design, implement, and maintain backend services for business-critical applications.",
+      "Ensured high availability and performance of applications by managing servers and troubleshooting issues.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Backend Developer",
+    company_name: "The Blu Canton",
+    icon: tbc,
+    iconBg: "#F5A623",
+    date: "March 2024 - December 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Key backend developer in building the Fashquik product, delivering a seamless quick-commerce experience in fashion.",
+      "Integrated Razorpay for seamless payment processing and transaction management.",
+      "Implemented various email services for order confirmations and customer notifications.",
+      "Developed secure Account Management features and integrated Google Maps API to display products within a 10 km radius, enhancing localized shopping experiences.",
     ],
   },
 ];
@@ -198,67 +175,64 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "E-commerce Application",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-stack e-commerce application where users can browse products, add them to the cart, and proceed to checkout. It includes user authentication, product management, and payment integration.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "green-text-gradient",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "redux",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "purple-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ecom,
+    source_code_link1: "https://github.com/noload/Edgistify_ecom_client.git",
+    source_code_link2: "https://github.com/noload/Edgistify_ecom_server.git",
   },
   {
-    name: "Job IT",
+    name: "Warehouse Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A complete MERN stack warehouse management system where users can register, sign in, reset their password, and manage state, city, and warehouse information.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "node.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "express",
+        color: "yellow-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "redux",
+        color: "purple-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: warehouseImg,
+    source_code_link1: "https://github.com/noload/DF_client.git",
+    source_code_link2: "https://github.com/noload/DF_server.git",
   },
 ];
 
